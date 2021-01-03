@@ -1,0 +1,215 @@
+﻿@model IEnumerable<ZeNerd.DAL.Context.Morador>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCrud.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+      @Html.ActionLink("Cadastrar Novo", "Create", new { area = "" }, new { @class = "btn btn-success add" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distrito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subdistrito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Setor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroQuadra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroFace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SeqEndereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SeqColetivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SeqEspecie)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TipoEspecieDomicilioOcupado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoDomicilio)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.QuantidadePessoasDomicilio)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TipoSexo)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TipoParantesco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoEtinoRacial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoPessoaIndigena)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Etinia)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TipoFalaLinguaIndigena)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.LinguaIndigenaPrimeira)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinguaIndigenaSegunda)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TipoLinguaPortuquesa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoQuilombolas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoRegistroCivil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoEducacao)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.NomeComunidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </th>
+        <th>            @Html.DisplayName("Editar")</th>
+        <th>            @Html.DisplayName("Ver")</th>
+        <th>            @Html.DisplayName("Excluir")</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Municipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distrito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subdistrito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Setor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroQuadra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroFace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SeqEndereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SeqColetivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SeqEspecie)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoEspecieDomicilioOcupado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoDomicilio)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantidadePessoasDomicilio)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoSexo)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.DataNascimento)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoParantesco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoEtinoRacial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoPessoaIndigena)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Etinia)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoFalaLinguaIndigena)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.LinguaIndigenaPrimeira)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinguaIndigenaSegunda)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoLinguaPortuquesa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoQuilombolas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoRegistroCivil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoEducacao)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeComunidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Longitude)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.Id })
+
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

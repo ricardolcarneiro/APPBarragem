@@ -1,0 +1,29 @@
+﻿<SIDEBAR>
+@if (User.IsInRole(	))
+{
+    <li class="header">tipo 1</li>
+}
+@if (User.IsInRole(TipoUsuario.Tipo2.ToString()))
+{
+    <li class="header">tipo 2</li>
+}
+
+@if (User.IsInRole(TipoUsuario.Tipo2.ToString()) || User.IsInRole(TipoUsuario.Tipo1.ToString()))
+{
+    <li class="header">tipo 2 E 1</li>
+}
+
+<CONTROLLER>
+[WebAuthorize(TipoUsuario.Tipo1, TipoUsuario.Tipo2)]
+
+
+<LOGIM>
+var identity = new ClaimsIdentity(new[]
+{
+    new Claim(ClaimTypes.Name, "Nome"),
+    new Claim(ClaimTypes.Role, tipo.ToString()),
+    new Claim(Constantes.UniqueClaimTypeIdentifier, "Id")
+}, Constantes.AuthenticationType);
+
+Request.GetOwinContext().Authentication.SignOut(Constantes.AuthenticationType);
+Request.GetOwinContext().Authentication.SignIn(identity);

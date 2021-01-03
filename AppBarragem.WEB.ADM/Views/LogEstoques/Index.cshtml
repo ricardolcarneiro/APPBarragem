@@ -1,0 +1,224 @@
+﻿@model IEnumerable<Mamelucos.DAL.Context.LogEstoque>
+
+@{
+    Layout = "~/Views/Shared/_LayoutCrud.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueControle.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fornecedor.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoUnidade.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCriacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAtualizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorUnidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVencimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueAtual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlagMovimentacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoquePerda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueAnterior)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+     
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstoqueControle.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fornecedor.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoUnidade.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoProduto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataCriacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataAtualizacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValorUnidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValorTotal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Produto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataVencimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstoqueAtual)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstoqueSaida)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataSaida)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlagMovimentacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstoquePerda)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstoqueAnterior)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsuarioId)
+                </td>
+            
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueControle.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fornecedor.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoUnidade.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCriacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAtualizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorUnidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVencimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueAtual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlagMovimentacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoquePerda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstoqueAnterior)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+
+        </tr>
+    </tfoot>
+</table>
+
+<!-- /.content-wrapper -->
+
+@section Scripts
+{
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                $('#example1').DataTable()
+                $('#example2').DataTable({
+                    'paging': true,
+                    'lengthChange': false,
+                    'searching': false,
+                    'ordering': true,
+                    'info': true,
+                    'autoWidth': true
+                })
+            })
+    </script>
+
+}
+

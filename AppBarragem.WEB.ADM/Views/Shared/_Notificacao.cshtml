@@ -1,0 +1,22 @@
+﻿@*<iframe src="http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>*@
+
+@Html.Raw(ViewBag.NOTIFICACAO)
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js'></script>
+
+@*<div class="contributors">*@
+
+@Html.Raw(AppBarragem.WEB.ADM.Util.Constantes.ALERTA())
+@*</div>
+    <script type="text/javascript">
+
+
+
+        $(function () {
+
+            setInterval(function () { $('.contributors').load('/Home/Notificacao'); }, 10000); // every 3 sec
+
+        });
+
+
+
+    </script>*@

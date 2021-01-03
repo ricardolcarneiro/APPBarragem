@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "958366314454",
+    "firebase_url": "https://barrage-1c56f.firebaseio.com",
+    "project_id": "barrage-1c56f",
+    "storage_bucket": "barrage-1c56f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958366314454:android:3ae2ff3b14a51251c2be77",
+        "android_client_info": {
+          "package_name": "App.Barrage.Android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958366314454-pj1j4nrhv3bamsvv7a8mg9lkq23phebo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsxjAqwx-shYc9oRXzkAj_79f3YQt_zU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958366314454-pj1j4nrhv3bamsvv7a8mg9lkq23phebo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

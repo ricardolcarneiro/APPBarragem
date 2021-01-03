@@ -1,0 +1,265 @@
+﻿@model ZeNerd.DAL.Context.Morador
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutCrud.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Morador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Municipio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distrito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distrito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subdistrito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subdistrito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Setor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Setor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroQuadra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroQuadra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroFace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroFace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeqEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeqEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeqColetivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeqColetivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeqEspecie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeqEspecie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEspecieDomicilioOcupado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEspecieDomicilioOcupado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDomicilio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDomicilio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantidadePessoasDomicilio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantidadePessoasDomicilio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoSexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoSexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoParantesco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoParantesco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEtinoRacial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEtinoRacial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPessoaIndigena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPessoaIndigena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Etinia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Etinia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoFalaLinguaIndigena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoFalaLinguaIndigena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinguaIndigenaPrimeira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinguaIndigenaPrimeira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinguaIndigenaSegunda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinguaIndigenaSegunda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoLinguaPortuquesa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoLinguaPortuquesa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoQuilombolas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoQuilombolas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoRegistroCivil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoRegistroCivil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEducacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEducacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeComunidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeComunidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
