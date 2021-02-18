@@ -302,7 +302,7 @@
             ];
 
             var locationsAguardando = [
-                 @Html.Raw(ViewBag.MAPAguardando)
+                 @Html.Raw(ViewBag.MAPRotaFuga)
          
             ];
 
@@ -332,7 +332,7 @@
 
             var markerAzul, markerAmarelo, markerVerde, markerVermelho, i;
             var imageAzul = '../Content/AppBarragem.WEB.ADM/img/pin_azul_tratado.png';
-            var imageAmarelo = '../Content/AppBarragem.WEB.ADM/img/pin_amarelo_tratado.png';
+            var imageAmarelo = '../Content/AppBarragem.WEB.ADM/img/pinEncontro.png';
             var imageVerde = '../Content/AppBarragem.WEB.ADM/img/pin_verde_tratado.png';
             var imageVermelho = '../Content/AppBarragem.WEB.ADM/img/pin_vermelho_tratado.png';
 
@@ -376,6 +376,8 @@
                     zoom: 10,
                     position: new google.maps.LatLng(locationsPronto[i][1], locationsPronto[i][2]),
                     map: map,
+                    travelMode: google.maps.DirectionsTravelMode.DRIVING,
+                    destination: marker.position,
                     icon: imageVerde
                 });
 

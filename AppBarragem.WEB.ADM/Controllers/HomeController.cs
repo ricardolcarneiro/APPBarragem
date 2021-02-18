@@ -61,6 +61,23 @@ namespace AppBarragem.WEB.ADM.Controllers
             }
             ViewBag.MAPSolicitado = conteudo;
             ViewBag.MORADORES = lstMorador.Count().ToString();
+
+
+
+            List<RotaFuga> lstRotaFuga = db.RotaFuga.ToList();
+            StringBuilder conteudoRotaFuga = new StringBuilder();
+
+            foreach (var item in lstRotaFuga)
+            {
+
+
+                conteudoRotaFuga.AppendLine("  ['<div style=\"width:200px;margin:0 auto; color:#4E1361;\"><h4><b>ID:" + item.Id + "</b></h4><br>Endereco:" + item.Endereco + "<br> <br>Data:" + item.Data + "<br>  </div>', " + item.Latitude.ToString().Replace(",", ".")
+
+                     + ", " + item.Longitude.ToString().Replace(",", ".") + "],");
+            }
+            ViewBag.MAPRotaFuga = conteudoRotaFuga;
+           
+
             return View();
         }
 
